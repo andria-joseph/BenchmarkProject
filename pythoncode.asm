@@ -58,4 +58,9 @@ with open("file1.txt", "r") as file:
 
 #Write to file
 with open("file4.txt", "w") as file:
+  for i in range(1000000000):
+    file.seek(10000 * i)
+    file.write(result)
+
+hard_drive_2_time = time.time() - start_time
 
