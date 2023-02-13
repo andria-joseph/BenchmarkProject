@@ -38,3 +38,13 @@ with open("file1.txt", "r") as file:
   for i in range(1000000000):
     file.seek(100 * 1)
     result = file.read(100)
+ 
+ #Write to file
+ with open("file2.txt", "w") as file:
+  for i in range(1000000000):
+    file.seek(100 * i)
+    file.write(result)
+ 
+ hard_drive_1_time = time.time() - start_time
+ 
+ #Hard drive benchmark 2
