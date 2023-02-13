@@ -23,3 +23,8 @@ floating_point_time = time.time() - start_time
 start_time = time.time()
 
 #Read from array elements
+array = np.random.randint(0, 100, 5000000000)
+for i in range(5000000000):
+  result = array[i]
+
+#Write to array elements
