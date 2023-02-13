@@ -64,3 +64,9 @@ with open("file4.txt", "w") as file:
 
 hard_drive_2_time = time.time() - start_time
 
+#Output results
+print("32-bit Integer operation benchmark time:", integer_time)
+print("64-bit Floating point operation benchmark time:", floating_point_time)
+print("Memory benchmark time:", memory_time)
+print("Hard drive benchmark 1 time:", hard_drive_1_time)
+print("Hard drive benchmark 2 time:", hard_drive_2_time)
