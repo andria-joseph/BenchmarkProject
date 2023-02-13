@@ -28,3 +28,8 @@ for i in range(5000000000):
   result = array[i]
 
 #Write to array elements
+for i in range(5000000000):
+  array[i] = result
+  
+memory_time = time.time() - start_time
+
