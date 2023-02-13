@@ -36,7 +36,7 @@ memory_time = time.time() - start_time
 #Read from file 
 with open("file1.txt", "r") as file:
   for i in range(1000000000):
-    file.seek(100 * 1)
+    file.seek(100 * i)
     result = file.read(100)
  
  #Write to file
@@ -48,3 +48,8 @@ with open("file1.txt", "r") as file:
  hard_drive_1_time = time.time() - start_time
  
  #Hard drive benchmark 2
+ start_time = time.time()
+ 
+ #Read from file
+ with open("file3.txt", "r") as file:
+ for i in range(1000000000):
