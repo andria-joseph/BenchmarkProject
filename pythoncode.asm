@@ -13,4 +13,8 @@ for i in range(10):
 for i in range(5000000000):
   result = result * i
   
+#Divison
+for i in range(2000000000):
+  result  = result/i
   
+floating_point_time = time.time() - start_time
