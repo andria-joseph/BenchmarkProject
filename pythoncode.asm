@@ -18,3 +18,8 @@ for i in range(2000000000):
   result  = result/i
   
 floating_point_time = time.time() - start_time
+
+#Memory benchmark
+start_time = time.time()
+
+#Read from array elements
