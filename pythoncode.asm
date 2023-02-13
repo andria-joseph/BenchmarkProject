@@ -53,3 +53,9 @@ with open("file1.txt", "r") as file:
  #Read from file
  with open("file3.txt", "r") as file:
  for i in range(1000000000):
+  file.seek(10000 * i)
+  result = file.read(10000)
+
+#Write to file
+with open("file4.txt", "w") as file:
+
