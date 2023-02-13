@@ -33,3 +33,8 @@ for i in range(5000000000):
   
 memory_time = time.time() - start_time
 
+#Read from file 
+with open("file1.txt", "r") as file:
+  for i in range(1000000000):
+    file.seek(100 * 1)
+    result = file.read(100)
