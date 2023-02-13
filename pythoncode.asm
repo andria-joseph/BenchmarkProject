@@ -8,3 +8,9 @@ start_time = time.time()
 result = 0
 for i in range(10):
   result += 1
+
+#Multiplication
+for i in range(5000000000):
+  result = result * i
+  
+  
